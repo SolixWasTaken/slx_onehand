@@ -18,8 +18,9 @@ lib.onCache('weapon', function(weapon)
 
     if not weapon and oneHanded.enabled then 
         ResetPedWeaponMovementClipset(cache.ped)
-        hasWeapon = false
     end
+    
+    hasWeapon = false
 end)
 
 local function toggleWeaponClipset()
