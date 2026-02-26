@@ -30,6 +30,7 @@ local function toggleWeaponClipset()
         lib.requestAnimSet(oneHanded.clipset)
         SetPedWeaponMovementClipset(cache.ped, oneHanded.clipset)
         oneHanded.enabled = true
+        RemoveAnimSet(ondeHanded.clipset)
     else
         ResetPedWeaponMovementClipset(cache.ped)
         oneHanded.enabled = false
@@ -39,3 +40,4 @@ end
 RegisterCommand(config.command, toggleWeaponClipset, false)
 
 RegisterKeyMapping(config.command, "Toggle weapon movement style.", "keyboard", config.key)
+
