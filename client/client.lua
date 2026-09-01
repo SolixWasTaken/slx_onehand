@@ -30,7 +30,7 @@ local function toggleWeaponClipset()
         lib.requestAnimSet(oneHanded.clipset)
         SetPedWeaponMovementClipset(cache.ped, oneHanded.clipset)
         oneHanded.enabled = true
-        RemoveAnimSet(ondeHanded.clipset)
+        RemoveAnimSet(oneHanded.clipset)
     else
         ResetPedWeaponMovementClipset(cache.ped)
         oneHanded.enabled = false
